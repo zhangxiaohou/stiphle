@@ -18,7 +18,7 @@ and you want to throttle it to 5 requests per second:
 创建一个throttle，然后告诉他需要等待多长时间。举个栗子，给这个$identifier一些被identifying的意义，管他是什么，反正是你需要限流的，然后假设你想要一秒钟只想有5个请求
 
 
-```
+```php
 <?php
 
 $throttle = new Stiphle\Throttle\LeakyBucket;
@@ -39,7 +39,7 @@ screws with your mind
 
 [^footstep1]:一些技术(包括ATM和帧中继)被认为是可突发的。这意味着用户数据可以超过为该连接正常保留的带宽，但是不能超过端口速率。这种情况的一个例子是T-1上的一个128Kb/s帧中继CIR—取决于销售商，有可能短时间超过128Kb/s速率进行发送
 
-```
+```php
 <?php
 
 $throttle = new Stiphle\Throttle\LeakyBucket;
@@ -94,7 +94,7 @@ window.
 Bucket](http://en.wikipedia.org/wiki/Leaky_bucket)和一个简单固定的TimeWindow
 
 
-```  
+```php
 /**
  * Throttle to 1000 per *rolling* 24 hours, e.g. the counter will not reset at
  * midnight
