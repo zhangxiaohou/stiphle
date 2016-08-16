@@ -1,14 +1,14 @@
 Stiphle
 ======
 
-它是什么？
+What is it? 它是什么？
 -----------
 
 Stiphle is a little library to try and provide an easy way of throttling/rate limit requests, for those without fancy hardware etc.
 
 Stiphle是一个用来节流限速的简单轻便的小工具，你不再需要一些花哨的大家伙来完成这个功能。
 
-它是如何工作的？
+How does it work? 它是如何工作的？
 -----------------
 
 You create a throttle, and ask it how long you should wait. For example, given
@@ -83,7 +83,7 @@ for(;;) {
 ```
 
 
-节流策略
+Throttle Strategies 节流策略
 -------------------
 
 There are currently two types of throttles, [Leaky
